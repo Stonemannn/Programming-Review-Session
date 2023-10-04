@@ -1,51 +1,65 @@
-# Programming-Review-Session
+# Programming Review Session: Git and GitHub Workflow
 
-In this session, we are going to walk through the basic git and github workflow for your mid-term projects.
+Welcome to the Git and GitHub review session! In this session, we'll walk through the basic workflow you'll use for your mid-term projects. 
 
-Here is the simplified workflow:
+## Basic Git and GitHub Workflow
 
-**Clone the Repository**: Clone the remote repository to your local machine.
-   ```bash
-   git clone https://github.com/username/repository.git
-   ```
+### 1. Clone the Repository
+Clone the remote repository to your local machine.
+```bash
+git clone https://github.com/username/repository.git
+```
 
-**Navigate to the Repository**: Change directory to the cloned repository.
-   ```bash
-   cd repository
-   ```
+### 2. Navigate to the Repository
+Change your directory to the cloned repository.
+```bash
+cd repository
+```
 
-**Pull Latest Changes**: It's a good practice to pull the latest changes from the remote repository to make sure you're working with the most recent version.
-   ```bash
-   git pull origin master
-   ```
+### 3. Pull Latest Changes
+Before making any changes, it's a good practice to pull the latest updates from the remote repository. This ensures you're working with the most recent version of the code.
+```bash
+git pull origin main
+```
 
-**Create a New Branch**: Create a new branch for your work.
-   ```bash
-   git branch new-feature 
-   git checkout new-feature
-   ```
+**Note**: In the newer repositories, the default branch name is `main` instead of `master`. Make sure you're pulling from the correct branch.
 
-**Make Changes**: Edit files and make your changes.
+### 4. Create a New Branch
+Always work on a new branch when adding features or fixing bugs. This keeps the main branch stable.
+```bash
+git checkout -b new-feature
+```
 
-**Stage Changes**: Stage your changes for commit. You can specify the changed files you want to stage, or all changed files.
-   ```bash
-   git add .
-   ```
+This command creates and checks out the branch in one step.
 
-**Commit Changes**: Commit your staged changes.
-   ```bash
-   git commit -m "Added new feature"
-   ```
+### 5. Make Changes
+Edit files, write code, fix bugs, and make any necessary changes.
 
-**Push the Branch to Remote**: Push your new branch to the remote repository.
-   ```bash
-   git push origin new-feature
-   ```
+### 6. Stage Changes
+Once you're satisfied with your changes, stage them for commit. You can specify individual files or stage all changed files.
+```bash
+git add .
+```
 
-**Create Pull Request on GitHub**: Go to your GitHub repository and create a new pull request. Choose to merge `new-feature` into `master`.
+### 7. Commit Changes
+Commit your staged changes with a meaningful commit message.
+```bash
+git commit -m "Added new feature"
+```
 
-**Resolve Conflicts on GitHub**: If GitHub indicates that there are conflicts, you will have an option to "Resolve conflicts" right on GitHub's interface. Click that button, make the necessary adjustments, and then save.
+### 8. Push the Branch to Remote
+Push your new branch to the remote repository.
+```bash
+git push origin new-feature
+```
 
-**Complete Pull Request**: Once conflicts are resolved, you can complete the pull request by merging `new-feature` into `master`.
+### 9. Create Pull Request on GitHub
+Navigate to your GitHub repository in your web browser. Click on the `New Pull Request` button. Choose to merge `new-feature` into `main`.
 
-In this workflow, the entire process of resolving conflicts is handled on GitHub, without requiring any local conflict resolution.
+### 10. Resolve Conflicts on GitHub
+If GitHub indicates that there are merge conflicts, you have the option to "Resolve conflicts" within GitHub's interface. Click this button, make the necessary adjustments, and then save.
+
+### 11. Complete Pull Request
+After resolving any conflicts, finalize the pull request by merging `new-feature` into `main`.
+
+**Note**: Always ensure that your local branch is up-to-date with the `main` branch before creating a pull request to minimize merge conflicts.
