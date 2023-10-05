@@ -35,8 +35,18 @@ git checkout -b new-feature
 
 This command creates and checks out the branch in one step.
 
+Check all existing branches (including which one you are on currently):
+```bash
+git branch
+```
+
 ### 5. Make Changes
 Edit files, write code, fix bugs, and make any necessary changes.
+
+Open jupyter editor in your browser:
+```bash
+jupyter notebook
+```
 
 ### 5a. Double Check Changes Made
 Before you start adding changes to a commit, you want to make sure you didn't accidentally change/remove/add files that shouldn't be there.
