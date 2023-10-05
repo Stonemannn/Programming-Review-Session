@@ -43,6 +43,11 @@ git branch
 ### 5. Make Changes
 Edit files, write code, fix bugs, and make any necessary changes.
 
+Open jupyter editor in your browser:
+```bash
+jupyter notebook
+```
+
 ### 5a. Double Check Changes Made
 Before you start adding changes to a commit, you want to make sure you didn't accidentally change/remove/add files that shouldn't be there.
 Use the following command to check what all files exist in your staging area.
