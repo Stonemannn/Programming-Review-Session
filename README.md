@@ -4,6 +4,9 @@ Welcome to the Git and GitHub review session! In this session, we'll walk throug
 
 ## Basic Git and GitHub Workflow
 
+### 0. Fork Repository
+(One student in each group) Click on the "Fork" button, and create a separate repository for your team. This is the one you will use for the following steps.
+
 ### 1. Clone the Repository
 Clone the remote repository to your local machine.
 ```bash
